@@ -1,0 +1,24 @@
+{
+  "name": "1c-landing",
+  "version": "1.0.0",
+  "description": "Brand new landing for 1C shop",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isakov-dev/1c-landing.git"
+  },
+  "author": "Nikita Isakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isakov-dev/1c-landing/issues"
+  },
+  "homepage": "https://github.com/isakov-dev/1c-landing#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
