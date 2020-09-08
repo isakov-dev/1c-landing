@@ -1,0 +1,30 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.submit-btn {
+
+  background: $red;
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: $white;
+  height: 46px;
+  border-radius: 30px;
+  text-align: center;
+  width: max-content;
+  padding: 0 30px;
+  align-items: center;
+  border: none;
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: $red-gradient;
+  }
+
+}
