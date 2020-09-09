@@ -23,12 +23,12 @@
         justify-content: center;
         text-decoration: none;
         color: unset;
-        padding-bottom: 2px;
+        padding-bottom: 32px;
 
         &.active {
             border-bottom: 4px solid $red;
             margin-bottom: -2px;
-            padding-bottom: 0;
+            padding-bottom: 30px;
         }
 
     }
