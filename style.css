@@ -1282,19 +1282,11 @@ h6 {
 }
 
 .products__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -11px;
-  margin-right: -11px;
-  margin-bottom: -33px;
-}
-
-.products__col {
-  padding-left: 11px;
-  padding-right: 11px;
-  width: 50%;
-  margin-bottom: 33px;
-  position: relative;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 23px;
+  grid-row-gap: 33px;
 }
 
 .tabs {

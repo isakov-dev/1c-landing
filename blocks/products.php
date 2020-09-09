@@ -36,29 +36,27 @@
                             <?if (!empty($tab->products)) {?>
                                 <div class="products__list">
                                     <?foreach ($tab->products as $product) {?>
-                                        <div class="products__col">
-                                            <div class="card-container">
-                                                <div class="card">
-                                                    <div class="card__header">
-                                                        <?if ($product->image) {?>
-                                                            <img src="<?=$product->image?>" alt="<?=$product->name?>"
-                                                                 class="card__image">
-                                                        <?}?>
-                                                        <div class="card__title">
-                                                            <?=$product->name?>
-                                                        </div>
+                                        <div class="card-container">
+                                            <div class="card">
+                                                <div class="card__header">
+                                                    <?if ($product->image) {?>
+                                                        <img src="<?=$product->image?>" alt="<?=$product->name?>"
+                                                             class="card__image">
+                                                    <?}?>
+                                                    <div class="card__title">
+                                                        <?=$product->name?>
                                                     </div>
-                                                    <div class="card__content">
-                                                        <?if (!empty($product->advantages)) {?>
-                                                            <ul class="list">
-                                                                <?foreach ($product->advantages as $item) {?>
-                                                                    <li class="list__item">
-                                                                        <?=$item?>
-                                                                    </li>
-                                                                <?}?>
-                                                            </ul>
-                                                        <?}?>
-                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <?if (!empty($product->advantages)) {?>
+                                                        <ul class="list">
+                                                            <?foreach ($product->advantages as $item) {?>
+                                                                <li class="list__item">
+                                                                    <?=$item?>
+                                                                </li>
+                                                            <?}?>
+                                                        </ul>
+                                                    <?}?>
                                                 </div>
                                             </div>
                                         </div>
