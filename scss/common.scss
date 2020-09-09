@@ -1,5 +1,28 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: unset;
+  margin: unset;
+  font-weight: unset;
+  list-style: unset;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: $black;
+
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 34px;
 }
 
 .submit-btn {
@@ -17,6 +40,7 @@ body {
   padding: 0 30px;
   align-items: center;
   border: none;
+  text-decoration: none;
 
   &:focus, &:active {
     outline: none;
@@ -25,6 +49,57 @@ body {
   &:hover {
     cursor: pointer;
     background: $red-gradient;
+  }
+
+  &_big {
+
+    background: $red-gradient;
+    height: 50px;
+
+    &:hover {
+      background: $red;
+    }
+
+  }
+
+  &_wide {
+    width: 100%;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 13px;
+  }
+
+}
+
+.field {
+
+  &__label {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 15px;
+    margin-bottom: 7px;
+  }
+
+  &__input {
+
+    height: 50px;
+    border-radius: 25px;
+    background: $white;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+    padding: 0 25px;
+    font-family: 'Montserrat', sans-serif;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
   }
 
 }

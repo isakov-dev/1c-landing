@@ -1,0 +1,27 @@
+.hero {
+
+    min-height: 100vh;
+    background: url("img/hero/bg.png") top center no-repeat;
+    background-size: 100vw auto;
+    padding-top: 156px;
+    padding-bottom: 50px;
+
+    &__title {
+        padding-bottom: 20px;
+        border-bottom: 2px solid $red;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-top: 29px;
+    }
+
+    &__list {
+        margin-top: 72px;
+    }
+
+    &__submit-btn {
+        margin-top: 94px;
+    }
+
+}

@@ -1,0 +1,30 @@
+.list {
+
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &__item {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: rgba(34, 34, 34, .6);
+        display: flex;
+        align-items: start;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &::before {
+            content: url("img/list/check.svg");
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+    }
+
+}

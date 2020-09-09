@@ -1015,10 +1015,43 @@ html {
   margin-left: auto !important;
 }
 
-/*# sourceMappingURL=bootstrap-grid.css.map */
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: unset;
+  margin: unset;
+  font-weight: unset;
+  list-style: unset;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #222222;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 34px;
 }
 
 .submit-btn {
@@ -1035,6 +1068,7 @@ body {
   padding: 0 30px;
   align-items: center;
   border: none;
+  text-decoration: none;
 }
 
 .submit-btn:focus,
@@ -1045,6 +1079,77 @@ body {
 .submit-btn:hover {
   cursor: pointer;
   background: linear-gradient(180deg, #E2474B 0%, #BA0F13 100%);
+}
+
+.submit-btn_big {
+  background: linear-gradient(180deg, #E2474B 0%, #BA0F13 100%);
+  height: 50px;
+}
+
+.submit-btn_big:hover {
+  background: #E2474B;
+}
+
+.submit-btn_wide {
+  width: 100%;
+}
+
+.submit-btn__icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 13px;
+}
+
+.field__label {
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 15px;
+  margin-bottom: 7px;
+}
+
+.field__input {
+  height: 50px;
+  border-radius: 25px;
+  background: #fff;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222222;
+  padding: 0 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.field__input:focus,
+.field__input:active {
+  outline: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.6);
+  display: flex;
+  align-items: start;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.list__item::before {
+  content: url("img/list/check.svg");
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .header {
@@ -1090,6 +1195,123 @@ body {
   font-size: 12px;
   line-height: 15px;
   opacity: .5;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("img/hero/bg.png") top center no-repeat;
+  background-size: 100vw auto;
+  padding-top: 156px;
+  padding-bottom: 50px;
+}
+
+.hero__title {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #E2474B;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  margin-top: 29px;
+}
+
+.hero__list {
+  margin-top: 72px;
+}
+
+.hero__submit-btn {
+  margin-top: 94px;
+}
+
+.consultation {
+  position: relative;
+  background: linear-gradient(47.07deg, #E06314 11.45%, #FFC87B 77.85%);
+  padding: 50px 0;
+}
+
+.consultation::before {
+  content: url("img/consultation/circle-left.svg");
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -44px;
+}
+
+.consultation::after {
+  content: url("img/consultation/circle-right.svg");
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: -25px;
+}
+
+.consultation__title {
+  color: #fff;
+}
+
+.consultation__form {
+  margin-top: 25px;
+}
+
+.consultation__label {
+  color: #fff;
+}
+
+.consultation__policy {
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  opacity: 0.7;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.products {
+  margin-top: 44px;
+  padding-top: 100px;
+  background: url("img/products/bg.svg") top center no-repeat;
+  background-size: 100vw auto;
+}
+
+.products__tabs {
+  margin-top: 34px;
+}
+
+.tabs {
+  border-bottom: 2px solid rgba(189, 189, 198, 0.6);
+}
+
+.tabs__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: unset;
+  padding-bottom: 2px;
+}
+
+.tabs__item.active {
+  border-bottom: 4px solid #E2474B;
+  margin-bottom: -2px;
+  padding-bottom: 0;
+}
+
+.tabs__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #222222;
+  margin-top: 15px;
+}
+
+.tabs__description {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+  color: #222222;
+  margin-top: 5px;
 }
 
 @media (min-width: 576px) {

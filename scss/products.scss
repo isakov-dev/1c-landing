@@ -1,0 +1,53 @@
+.products {
+
+    margin-top: 44px;
+    padding-top: 100px;
+    background: url("img/products/bg.svg") top center no-repeat;
+    background-size: 100vw auto;
+
+    &__tabs {
+        margin-top: 34px;
+    }
+
+}
+
+.tabs {
+
+    border-bottom: 2px solid rgba(189, 189, 198, .6);
+
+    &__item {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        color: unset;
+        padding-bottom: 2px;
+
+        &.active {
+            border-bottom: 4px solid $red;
+            margin-bottom: -2px;
+            padding-bottom: 0;
+        }
+
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $black;
+        margin-top: 15px;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 22px;
+        color: $black;
+        margin-top: 5px;
+    }
+
+}
