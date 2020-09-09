@@ -1277,17 +1277,34 @@ h6 {
   margin-top: 34px;
 }
 
+.products__tabs-content {
+  margin-top: 50px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -11px;
+  margin-right: -11px;
+  margin-bottom: -33px;
+}
+
+.products__col {
+  padding-left: 11px;
+  padding-right: 11px;
+  width: 50%;
+  margin-bottom: 33px;
+  position: relative;
+}
+
 .tabs {
   border-bottom: 2px solid rgba(189, 189, 198, 0.6);
 }
 
 .tabs__item {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-decoration: none;
-  color: unset;
+  color: #222222;
   padding-bottom: 32px;
 }
 
@@ -1295,6 +1312,14 @@ h6 {
   border-bottom: 4px solid #E2474B;
   margin-bottom: -2px;
   padding-bottom: 30px;
+  color: #E2474B;
+}
+
+.tabs__image {
+  height: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tabs__title {
@@ -1302,16 +1327,67 @@ h6 {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #222222;
   margin-top: 15px;
+  display: block;
 }
 
 .tabs__description {
   font-weight: 300;
   font-size: 13px;
   line-height: 22px;
-  color: #222222;
   margin-top: 5px;
+  display: block;
+}
+
+.tabs__tabs-content {
+  margin-top: 50px;
+}
+
+.card-container {
+  height: 100%;
+  position: relative;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 50px 30px;
+  background: #fff;
+  color: #222222;
+  height: 100%;
+}
+
+.card:hover {
+  background: #FFF9F0;
+  box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
+  position: absolute;
+  z-index: 2;
+  height: 700px;
+}
+
+.card__header {
+  display: flex;
+  align-items: start;
+  padding-bottom: 22px;
+  border-bottom: 2px solid #E2474B;
+}
+
+.card__image {
+  width: 71px;
+  height: auto;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 23px;
+}
+
+.card__content {
+  margin-top: 19px;
 }
 
 @media (min-width: 576px) {
