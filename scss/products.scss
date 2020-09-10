@@ -87,14 +87,6 @@
     color: $black;
     height: 100%;
 
-    &:hover {
-        background: #FFF9F0;
-        box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
-        position: absolute;
-        z-index: 2;
-        height: 700px;
-    }
-
     &__header {
         display: flex;
         align-items: start;
@@ -118,6 +110,43 @@
 
     &__content {
         margin-top: 19px;
+    }
+
+    &__hidden {
+        display: none;
+    }
+
+    &__bonuses {
+        background: $orange-gradient-2;
+        color: $white;
+        margin-left: -50px;
+        padding: 20px 57px 30px 65px;
+    }
+
+    &__bonus {
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    &:hover {
+
+        background: #FFF9F0;
+        box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
+        position: absolute;
+        z-index: 2;
+        height: 700px;
+
+        .card__hidden {
+            display: block;
+        }
+
     }
 
 }

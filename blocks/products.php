@@ -57,6 +57,15 @@
                                                             <?}?>
                                                         </ul>
                                                     <?}?>
+                                                    <div class="card__hidden">
+                                                        <ul class="card__bonuses">
+                                                            <?foreach ($product->bonuses as $item) {?>
+                                                                <li class="card__bonus">
+                                                                    <?=$item?>
+                                                                </li>
+                                                            <?}?>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

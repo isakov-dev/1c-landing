@@ -1349,14 +1349,6 @@ h6 {
   height: 100%;
 }
 
-.card:hover {
-  background: #FFF9F0;
-  box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
-  position: absolute;
-  z-index: 2;
-  height: 700px;
-}
-
 .card__header {
   display: flex;
   align-items: start;
@@ -1380,6 +1372,39 @@ h6 {
 
 .card__content {
   margin-top: 19px;
+}
+
+.card__hidden {
+  display: none;
+}
+
+.card__bonuses {
+  background: linear-gradient(40.89deg, #E06314 10.57%, #F4AA42 91.35%);
+  color: #fff;
+  margin-left: -50px;
+  padding: 20px 57px 30px 65px;
+}
+
+.card__bonus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__bonus:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  background: #FFF9F0;
+  box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
+  position: absolute;
+  z-index: 2;
+  height: 700px;
+}
+
+.card:hover .card__hidden {
+  display: block;
 }
 
 @media (min-width: 576px) {
