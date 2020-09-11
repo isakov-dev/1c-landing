@@ -116,3 +116,59 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 }
+
+.flickity-prev-next-button {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $red;
+  color: $white;
+
+  &.previous {
+    left: calc(-25px - 12px);
+  }
+
+  &.next {
+    right: calc(-25px - 12px);
+  }
+
+  @media (max-width: 767.98px) {
+
+    top: unset;
+    bottom: -90px;
+
+    &.previous {
+      left: calc(50% - 65px);
+    }
+
+    &.next {
+      right: calc(50% - 65px);
+    }
+
+  }
+
+  .flickity-button-icon {
+    width: 15px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: $red-gradient
+  }
+
+  &:active {
+    background: $orange-gradient;
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: .3;
+    background: $red;
+    color: $white;
+  }
+
+}

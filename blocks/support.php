@@ -21,6 +21,9 @@
                         </li>
                     <?}?>
                 </ul>
+                <button class="support__btn submit-btn">
+                    <?=$support->button_text?>
+                </button>
             </div>
         </div>
     </div>

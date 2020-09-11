@@ -50,7 +50,11 @@
                                                 <div class="card__content">
                                                     <?if (!empty($product->advantages)) {?>
                                                         <ul class="list">
-                                                            <?foreach ($product->advantages as $item) {?>
+                                                            <?foreach ($product->advantages as $item) {
+                                                                $monthIndex = intval(date('n')) - 1;
+                                                                $item = str_replace("#in-month#",
+                                                                    $products->in_months[$monthIndex], $item);
+                                                                ?>
                                                                 <li class="list__item">
                                                                     <?=$item?>
                                                                 </li>
@@ -59,7 +63,10 @@
                                                     <?}?>
                                                     <div class="card__hidden">
                                                         <ul class="card__bonuses">
-                                                            <?foreach ($product->bonuses as $item) {?>
+                                                            <?foreach ($product->bonuses as $item) {
+                                                                $monthIndex = intval(date('n')) - 1;
+                                                                $item = str_replace("#in-month#",
+                                                                    $products->in_months[$monthIndex], $item);?>
                                                                 <li class="card__bonus">
                                                                     <?=$item?>
                                                                 </li>
@@ -70,18 +77,22 @@
                                                                 <button class="card__button submit-btn">
                                                                     Заказать
                                                                 </button>
-                                                                <button class="card__button submit-btn
-                                                                    submit-btn_inverse">
-                                                                    Арендовать
-                                                                </button>
+                                                                <?if ($product->prices->rent) {?>
+                                                                    <button class="card__button submit-btn
+                                                                        submit-btn_inverse">
+                                                                        Арендовать
+                                                                    </button>
+                                                                <?}?>
                                                             </div>
                                                             <div class="card__prices">
                                                                 <div class="card__price">
                                                                     <?=$product->prices->buy?>
                                                                 </div>
-                                                                <div class="card__price">
-                                                                    <?=$product->prices->rent?>
-                                                                </div>
+                                                                <?if ($product->prices->rent) {?>
+                                                                    <div class="card__price">
+                                                                        <?=$product->prices->rent?>
+                                                                    </div>
+                                                                <?}?>
                                                             </div>
                                                         </div>
                                                     </div>

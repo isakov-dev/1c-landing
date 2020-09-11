@@ -12,6 +12,11 @@
     height: 100px;
   }
 
+  &__logo {
+    height: 56px;
+    width: auto;
+  }
+
   &__contacts {
     display: flex;
     align-items: center;
