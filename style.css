@@ -1094,6 +1094,17 @@ h6 {
   width: 100%;
 }
 
+.submit-btn_inverse {
+  background: transparent;
+  border: 2px solid #E2474B;
+  color: #222222;
+}
+
+.submit-btn_inverse:hover {
+  background: linear-gradient(180deg, #E2474B 0%, #BA0F13 100%);
+  color: #fff;
+}
+
 .submit-btn__icon {
   width: 18px;
   height: 18px;
@@ -1395,12 +1406,36 @@ h6 {
   margin-bottom: 15px;
 }
 
+.card__total {
+  margin-top: 20px;
+  display: flex;
+}
+
+.card__buttons {
+  margin-right: 34px;
+}
+
+.card__button:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card__price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 46px;
+  color: #222222;
+}
+
+.card__price:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .card:hover {
   background: #FFF9F0;
   box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
   position: absolute;
   z-index: 2;
-  height: 700px;
+  height: auto;
 }
 
 .card:hover .card__hidden {

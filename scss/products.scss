@@ -135,13 +135,40 @@
 
     }
 
+    &__total {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    &__buttons {
+        margin-right: 34px;
+    }
+
+    &__button {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 46px;
+        color: $black;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+
     &:hover {
 
         background: #FFF9F0;
         box-shadow: 0 0 20px rgba(224, 99, 20, 0.3);
         position: absolute;
         z-index: 2;
-        height: 700px;
+        height: auto;
 
         .card__hidden {
             display: block;

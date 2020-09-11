@@ -65,6 +65,25 @@
                                                                 </li>
                                                             <?}?>
                                                         </ul>
+                                                        <div class="card__total">
+                                                            <div class="card__buttons">
+                                                                <button class="card__button submit-btn">
+                                                                    Заказать
+                                                                </button>
+                                                                <button class="card__button submit-btn
+                                                                    submit-btn_inverse">
+                                                                    Арендовать
+                                                                </button>
+                                                            </div>
+                                                            <div class="card__prices">
+                                                                <div class="card__price">
+                                                                    <?=$product->prices->buy?>
+                                                                </div>
+                                                                <div class="card__price">
+                                                                    <?=$product->prices->rent?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

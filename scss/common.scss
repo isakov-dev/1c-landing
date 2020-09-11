@@ -66,6 +66,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
+  &_inverse {
+
+    background: transparent;
+    border: 2px solid $red;
+    color: $black;
+
+    &:hover {
+      background: $red-gradient;
+      color: $white;
+    }
+
+  }
+
   &__icon {
     width: 18px;
     height: 18px;
