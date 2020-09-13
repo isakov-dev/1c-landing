@@ -1,0 +1,63 @@
+.achievements {
+
+  margin-top: 116px;
+
+  &__advantages {
+    margin-top: 44px;
+    margin-bottom: -44px;
+  }
+
+  &__items {
+    margin-top: 54px;
+  }
+
+}
+
+.advantage {
+
+  display: flex;
+  align-items: start;
+  margin-bottom: 44px;
+
+  &__icon {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $black;
+  }
+
+}
+
+.achievement {
+
+  height: 226px;
+  background: url("img/achievements/item-bg.svg") top left no-repeat;
+  background-size: contain;
+
+  &__number {
+    margin-top: 40px;
+    font-size: 120px;
+    line-height: 146px;
+    font-weight: bold;
+    background: $orange-gradient-2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__caption {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    padding-left: 125px;
+    margin-top: -25px;
+  }
+
+}

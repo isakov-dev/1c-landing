@@ -1595,6 +1595,64 @@ h6 {
   opacity: .3;
 }
 
+.achievements {
+  margin-top: 116px;
+}
+
+.achievements__advantages {
+  margin-top: 44px;
+  margin-bottom: -44px;
+}
+
+.achievements__items {
+  margin-top: 54px;
+}
+
+.advantage {
+  display: flex;
+  align-items: start;
+  margin-bottom: 44px;
+}
+
+.advantage__icon {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.advantage__text {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222222;
+}
+
+.achievement {
+  height: 226px;
+  background: url("img/achievements/item-bg.svg") top left no-repeat;
+  background-size: contain;
+}
+
+.achievement__number {
+  margin-top: 40px;
+  font-size: 120px;
+  line-height: 146px;
+  font-weight: bold;
+  background: linear-gradient(40.89deg, #E06314 10.57%, #F4AA42 91.35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.achievement__caption {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  padding-left: 125px;
+  margin-top: -25px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
