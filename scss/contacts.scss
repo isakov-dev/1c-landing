@@ -1,0 +1,23 @@
+.contacts {
+
+  margin-top: 148px;
+  background: url("img/contacts/map.png") center no-repeat;
+  background-size: cover;
+  padding: 65px 0;
+
+  &__card {
+    background: $white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 30px 40px 60px;
+  }
+
+  &__list {
+    margin-top: 56px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+}

@@ -48,11 +48,11 @@
                         <div class="contact">
                             <img class="contact__icon" src="img/contact/phone.svg" alt="">
                             <div class="contact__content">
-                                <?=$contacts->phones[0]?>
+                                <a href="tel:<?=$contacts->phones[0]?>"><?=$contacts->phones[0]?></a>
                             </div>
                         </div>
                         <button class="submit-btn">
-                            Записаться
+                            Заказать звонок
                         </button>
                     </div>
                 </div>
