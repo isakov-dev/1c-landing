@@ -126,11 +126,11 @@ h1, h2, h3, h4, h5, h6 {
   color: $white;
 
   &.previous {
-    left: calc(-25px - 12px);
+    left: calc(-50px - 12px);
   }
 
   &.next {
-    right: calc(-25px - 12px);
+    right: calc(-50px - 12px);
   }
 
   @media (max-width: 767.98px) {

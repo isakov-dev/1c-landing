@@ -1145,11 +1145,11 @@ h6 {
 }
 
 .flickity-prev-next-button.previous {
-  left: calc(-25px - 12px);
+  left: calc(-50px - 12px);
 }
 
 .flickity-prev-next-button.next {
-  right: calc(-25px - 12px);
+  right: calc(-50px - 12px);
 }
 
 .flickity-prev-next-button .flickity-button-icon {
@@ -1527,6 +1527,72 @@ h6 {
 .trust__logo {
   height: auto;
   max-width: 100%;
+}
+
+.reviews {
+  margin-top: 145px;
+  background: linear-gradient(40.89deg, #E06314 10.57%, #F4AA42 91.35%);
+  padding: 50px 0 70px;
+  position: relative;
+}
+
+.reviews::before {
+  content: url("img/reviews/circle-left.svg");
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+.reviews::after {
+  content: url("img/reviews/circle-right.svg");
+  position: absolute;
+  right: 0;
+  bottom: -28px;
+}
+
+.reviews__content {
+  position: relative;
+  z-index: 2;
+}
+
+.reviews__title {
+  color: #fff;
+}
+
+.reviews__slider {
+  margin-top: 45px;
+}
+
+.reviews__item {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.reviews__scan {
+  max-width: 100%;
+  height: auto;
+}
+
+.reviews .flickity-prev-next-button {
+  background: #fff;
+  opacity: .5;
+  color: #E2474B;
+}
+
+.reviews .flickity-prev-next-button:hover {
+  background: linear-gradient(180deg, #E2474B 0%, #BA0F13 100%);
+  color: #fff;
+}
+
+.reviews .flickity-prev-next-button:active {
+  background: linear-gradient(47.07deg, #E06314 11.45%, #FFC87B 77.85%);
+  opacity: 1;
+  color: #fff;
+}
+
+.reviews .flickity-prev-next-button:disabled {
+  opacity: .3;
 }
 
 @media (min-width: 576px) {

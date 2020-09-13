@@ -1,0 +1,69 @@
+.reviews {
+
+  margin-top: 145px;
+  background: $orange-gradient-2;
+  padding: 50px 0 70px;
+  position: relative;
+
+  &::before {
+    content: url("img/reviews/circle-left.svg");
+    position: absolute;
+    left: 0;
+    top: -8px;
+  }
+
+  &::after {
+    content: url("img/reviews/circle-right.svg");
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__slider {
+    margin-top: 45px;
+  }
+
+  &__item {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__scan {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flickity-prev-next-button {
+
+    background: $white;
+    opacity: .5;
+    color: $red;
+
+    &:hover {
+      background: $red-gradient;
+      color: $white;
+    }
+
+    &:active {
+      background: $orange-gradient;
+      opacity: 1;
+      color: $white;
+    }
+
+    &:disabled {
+      opacity: .3;
+    }
+
+  }
+
+}
