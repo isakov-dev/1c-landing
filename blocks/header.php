@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
               rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+              rel="stylesheet"/>
         <link rel="stylesheet" href="style.css">
 
         <!-- Optional JavaScript -->
@@ -30,8 +32,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-        <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-              rel="stylesheet"/>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
         <title>1с</title>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <button class="submit-btn" onclick="modalApp.openModal('<?=$contacts->modal->title?>',
-                                '<?=$contacts->modal->submit_text?>')">
+                                '<?=$contacts->modal->submit_text?>', '<?=$contacts->modal->image_url?>')">
                             Заказать звонок
                         </button>
                     </div>

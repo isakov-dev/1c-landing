@@ -44,6 +44,7 @@ a, a:hover {
   width: max-content;
   padding: 0 30px;
   align-items: center;
+  justify-content: center;
   border: none;
   text-decoration: none;
 
@@ -176,4 +177,13 @@ a, a:hover {
     color: $white;
   }
 
+}
+
+.fancybox-button.fancybox-close-small {
+  display: none;
+}
+
+.fancybox-slide {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

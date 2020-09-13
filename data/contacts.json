@@ -10,6 +10,7 @@
   "footer_title": "Наши контакты",
   "modal": {
     "title": "Оставьте заявку и наш специалист вам перезвонит",
-    "submit_text": "Оставить заявку"
+    "submit_text": "Оставить заявку",
+    "image_url": "img/header/modal.png"
   }
 }

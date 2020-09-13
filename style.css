@@ -1073,6 +1073,7 @@ a:hover {
   width: max-content;
   padding: 0 30px;
   align-items: center;
+  justify-content: center;
   border: none;
   text-decoration: none;
 }
@@ -1179,6 +1180,15 @@ a:hover {
   opacity: .3;
   background: #E2474B;
   color: #fff;
+}
+
+.fancybox-button.fancybox-close-small {
+  display: none;
+}
+
+.fancybox-slide {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .list {
@@ -1690,6 +1700,45 @@ a:hover {
   width: 730px;
   background: #FFF9F0;
   border-radius: 10px;
+  padding: 50px 250px 50px 65px;
+  position: relative;
+  overflow: visible;
+}
+
+.modal__close {
+  position: absolute;
+  z-index: 2;
+  top: -18px;
+  right: -20px;
+}
+
+.modal__fields {
+  margin-top: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.modal__field {
+  margin-bottom: 20px;
+}
+
+.modal__submit {
+  margin-top: 30px;
+}
+
+.modal__policy {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.modal__image {
+  position: absolute;
+  top: 55px;
+  left: 480px;
 }
 
 @media (min-width: 576px) {
