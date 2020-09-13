@@ -20,5 +20,6 @@ include 'blocks/trust.php';
 include 'blocks/reviews.php';
 include 'blocks/achievements.php';
 include 'blocks/contacts.php';
+include 'blocks/modal.php';
 include 'blocks/footer.php';
 /* page blocks */

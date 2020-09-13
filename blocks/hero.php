@@ -21,10 +21,10 @@
                         </li>
                     <?}?>
                 </ul>
-                <a href="<?=$hero->button->link?>" class="hero__submit-btn submit-btn">
+                <button class="hero__submit-btn submit-btn">
                     <img src="img/hero/download.svg" alt="" class="submit-btn__icon">
-                    <?=$hero->button->text?>
-                </a>
+                    <?=$hero->button_text?>
+                </button>
             </div>
         </div>
     </div>

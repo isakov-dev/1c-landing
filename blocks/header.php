@@ -28,6 +28,12 @@
                 crossorigin="anonymous"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+              rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
         <title>1с</title>
     </head>
     <body>
@@ -51,7 +57,8 @@
                                 <a href="tel:<?=$contacts->phones[0]?>"><?=$contacts->phones[0]?></a>
                             </div>
                         </div>
-                        <button class="submit-btn">
+                        <button class="submit-btn" onclick="modalApp.openModal('<?=$contacts->modal->title?>',
+                                '<?=$contacts->modal->submit_text?>')">
                             Заказать звонок
                         </button>
                     </div>

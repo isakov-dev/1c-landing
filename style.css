@@ -1686,6 +1686,12 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.modal {
+  width: 730px;
+  background: #FFF9F0;
+  border-radius: 10px;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
