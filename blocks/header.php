@@ -42,11 +42,11 @@
     <body>
         <header class="header">
             <div class="header__container container">
-                <div class="header__row row align-items-center">
-                    <div class="col-lg-4">
+                <div class="header__row row align-items-center justify-content-between">
+                    <div class="col-xl-4 col-lg-3 col-auto">
                         <img src="img/header/logo.png" alt="1С" class="header__logo">
                     </div>
-                    <div class="header__contacts col-lg-8">
+                    <div class="header__contacts col-xl-8 col-lg-9 d-none d-lg-flex">
                         <div class="contact">
                             <img class="contact__icon" src="img/contact/pin.svg" alt="">
                             <div class="contact__content">
@@ -64,6 +64,11 @@
                                 '<?=$contacts->modal->submit_text?>', '<?=$contacts->modal->image_url?>')">
                             Заказать звонок
                         </button>
+                    </div>
+                    <div class="col-auto d-lg-none">
+                        <a href="tel:<?=$contacts->phones[0]?>">
+                            <img src="img/contact/phone.svg" width="22" alt="">
+                        </a>
                     </div>
                 </div>
             </div>

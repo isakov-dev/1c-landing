@@ -17,7 +17,8 @@
             <div class="col-12">
                 <div class="tabs nav row" role="tablist">
                     <?foreach ($products->tabs as $index => $tab) {?>
-                        <a class="tabs__item col-lg-3 nav-link <?if (!$index) {?>active<?}?>" data-toggle="tab"
+                        <a class="tabs__item col-lg-3 col-md-5 col-sm-7 col-12 nav-link <?if (!$index) {?>active<?}?>"
+                           data-toggle="tab"
                            href="#products-tab-<?=$index?>" role="tab">
                             <img src="<?=$tab->image?>" alt="<?=$tab->name?>" class="tabs__image">
                             <span class="tabs__title">
@@ -74,6 +75,9 @@
                                                         </ul>
                                                         <div class="card__total">
                                                             <div class="card__buttons">
+                                                                <div class="card__price d-sm-none">
+                                                                    <?=$product->prices->buy?>
+                                                                </div>
                                                                 <button class="card__button submit-btn"
                                                                         onclick="modalApp.openModal(
                                                                             'Заказать программу «<?=$product->name?>»',
@@ -81,6 +85,9 @@
                                                                     Заказать
                                                                 </button>
                                                                 <?if ($product->prices->rent) {?>
+                                                                    <div class="card__price d-sm-none">
+                                                                        <?=$product->prices->rent?>
+                                                                    </div>
                                                                     <button class="card__button submit-btn submit-btn_inverse"
                                                                             onclick="modalApp.openModal(
                                                                                 'Арендовать программу «<?=$product->name?>»',
@@ -89,7 +96,7 @@
                                                                     </button>
                                                                 <?}?>
                                                             </div>
-                                                            <div class="card__prices">
+                                                            <div class="card__prices d-none d-sm-block">
                                                                 <div class="card__price">
                                                                     <?=$product->prices->buy?>
                                                                 </div>

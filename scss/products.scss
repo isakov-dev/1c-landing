@@ -5,20 +5,37 @@
     background: url("img/products/bg.svg") top center no-repeat;
     background-size: 100vw auto;
 
+    @include tablet {
+        margin-top: 0;
+        padding-top: 60px;
+    }
+
     &__tabs {
         margin-top: 34px;
     }
 
     &__tabs-content {
+
         margin-top: 50px;
+
+        @include tablet {
+            margin-top: 30px;
+        }
+
     }
 
     &__list {
+
         display: grid;
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 23px;
         grid-row-gap: 33px;
+
+        @include laptop {
+            grid-template-columns: 1fr;
+        }
+
     }
 
 }
@@ -26,6 +43,11 @@
 .tabs {
 
     border-bottom: 2px solid rgba(189, 189, 198, .6);
+
+    @include laptop {
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
 
     &__item {
 
@@ -86,6 +108,11 @@
     background: $white;
     color: $black;
     height: 100%;
+    width: 100%;
+
+    @include tablet {
+        padding: 20px 15px 25px;
+    }
 
     &__header {
         display: flex;
@@ -95,17 +122,31 @@
     }
 
     &__image {
+
         width: 71px;
         height: auto;
         margin-right: 30px;
         flex-shrink: 0;
+
+        @include tablet {
+            margin-right: 16px;
+        }
+
     }
 
     &__title {
+
         font-weight: bold;
         font-size: 20px;
         line-height: 36px;
         margin-top: 23px;
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 10px;
+        }
+
     }
 
     &__content {
@@ -117,10 +158,18 @@
     }
 
     &__bonuses {
+
         background: $orange-gradient-2;
         color: $white;
         margin-left: -50px;
         padding: 20px 57px 30px 65px;
+
+        @include tablet {
+            margin-left: -15px;
+            margin-right: -15px;
+            padding: 20px 15px 30px 37px;
+        }
+
     }
 
     &__bonus {
@@ -157,7 +206,13 @@
         color: $black;
 
         &:not(:last-child) {
+
             margin-bottom: 15px;
+
+            @include phone {
+                margin-bottom: 0;
+            }
+
         }
 
     }
