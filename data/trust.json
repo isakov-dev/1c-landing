@@ -1,4 +1,11 @@
 {
   "title": "Нам доверяют",
-  "subtitle": "Множество крупных компаний Сибири"
+  "subtitle": "Множество крупных компаний Сибири",
+  "partners": [
+    "img/trust/partner-1.png",
+    "img/trust/partner-2.png",
+    "img/trust/partner-3.png",
+    "img/trust/partner-4.png",
+    "img/trust/partner-5.png"
+  ]
 }

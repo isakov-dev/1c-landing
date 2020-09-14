@@ -35,6 +35,9 @@
 
     width: 25%;
     padding: 0 15px;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
 
     @include laptop {
       width: 210px;

@@ -15,9 +15,9 @@
                     <?=$trust->subtitle?>
                 </div>
                 <div class="trust__slider">
-                    <?for($i = 0; $i < 5; $i++) {?>
+                    <?foreach ($trust->partners as $partner) {?>
                         <div class="trust__partner">
-                            <img src="img/trust/partner-1.png" class="trust__logo" alt="">
+                            <img src="<?=$partner?>" class="trust__logo" alt="">
                         </div>
                     <?}?>
                 </div>

@@ -1560,6 +1560,9 @@ a:hover {
 .trust__partner {
   width: 25%;
   padding: 0 15px;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
 }
 
 .trust__logo {
