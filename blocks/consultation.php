@@ -53,7 +53,7 @@
         consultationForm = new Vue({
             el: "#consultation_form",
             data: {
-                title: "<?=$consultation->title?>"
+                title: "<?=$consultation->title?>",
                 name: "",
                 phone: "",
             },
