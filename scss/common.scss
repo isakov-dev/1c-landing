@@ -143,6 +143,18 @@ a, a:hover {
   &.next {
     right: calc(-50px - 12px);
   }
+  
+  @media (max-width: 1299.98px) {
+
+    &.previous {
+      left: 0;
+    }
+
+    &.next {
+      right: 0;
+    }
+
+  }
 
   @media (max-width: 767.98px) {
 

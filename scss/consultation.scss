@@ -7,7 +7,6 @@
     &::before {
         content: url("img/consultation/circle-left.svg");
         position: absolute;
-        z-index: 2;
         left: 0;
         bottom: -44px;
     }
@@ -15,9 +14,13 @@
     &::after {
         content: url("img/consultation/circle-right.svg");
         position: absolute;
-        z-index: 2;
         right: 0;
         top: -25px
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
     }
 
     &__title {

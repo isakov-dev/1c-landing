@@ -3,7 +3,14 @@
   margin-top: 50px;
 
   &__slider {
+
     margin-top: 50px;
+
+    @media (max-width: 1299.98px) {
+      padding-left: calc(50px + 12px);
+      padding-right: calc(50px + 12px);
+    }
+
   }
 
   &__partner {

@@ -5,7 +5,7 @@
 ?>
 
 <div class="consultation">
-    <div class="container">
+    <div class="consultation__content container">
         <div class="row">
             <div class="col-12">
                 <h2 class="consultation__title title">

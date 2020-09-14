@@ -1312,7 +1312,6 @@ a:hover {
 .consultation::before {
   content: url("img/consultation/circle-left.svg");
   position: absolute;
-  z-index: 2;
   left: 0;
   bottom: -44px;
 }
@@ -1320,9 +1319,13 @@ a:hover {
 .consultation::after {
   content: url("img/consultation/circle-right.svg");
   position: absolute;
-  z-index: 2;
   right: 0;
   top: -25px;
+}
+
+.consultation__content {
+  position: relative;
+  z-index: 2;
 }
 
 .consultation__title {
@@ -5353,6 +5356,26 @@ a:hover {
   .ml-xl-auto,
   .mx-xl-auto {
     margin-left: auto !important;
+  }
+}
+
+@media (max-width: 1299.98px) {
+  .flickity-prev-next-button.previous {
+    left: 0;
+  }
+
+  .flickity-prev-next-button.next {
+    right: 0;
+  }
+
+  .trust__slider {
+    padding-left: calc(50px + 12px);
+    padding-right: calc(50px + 12px);
+  }
+
+  .reviews__slider {
+    padding-left: calc(50px + 12px);
+    padding-right: calc(50px + 12px);
   }
 }
 
