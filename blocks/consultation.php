@@ -14,8 +14,8 @@
             </div>
         </div>
         <div class="consultation__form row align-items-end" id="consultation_form">
-            <div class="col-lg-4">
-                <div class="field">
+            <div class="col-lg-4 col-md-6">
+                <div class="consultation__field field">
                     <div class="consultation__label field__label">
                         <?=$consultation->fields->name->label?>
                     </div>
@@ -23,8 +23,8 @@
                            placeholder="<?=$consultation->fields->name->placeholder?>">
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="field">
+            <div class="col-lg-4 col-md-6">
+                <div class="consultation__field field">
                     <div class="consultation__label field__label">
                         <?=$consultation->fields->phone->label?>
                     </div>
@@ -33,7 +33,8 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <button class="submit-btn submit-btn_big" v-on:click="submitForm()" :disabled="!formIsValid">
+                <button class="consultation__submit submit-btn submit-btn_big" v-on:click="submitForm()"
+                        :disabled="!formIsValid">
                     <span v-if="!sending"><?=$consultation->button_text?></span>
                     <span v-else>Отправка...</span>
                 </button>
