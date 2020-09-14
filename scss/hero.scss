@@ -6,22 +6,63 @@
     padding-top: 156px;
     padding-bottom: 120px;
 
+    @include laptop {
+        padding-top: 90px;
+        background: none;
+        padding-bottom: 40px;
+    }
+
     &__title {
+
         padding-bottom: 20px;
         border-bottom: 2px solid $red;
         text-transform: uppercase;
+
+        @include laptop {
+            margin-top: 40px;
+            text-align: center;
+        }
+
     }
 
     &__subtitle {
+
         margin-top: 29px;
+
+        @include laptop {
+            text-align: center;
+        }
+
     }
 
     &__list {
+
         margin-top: 72px;
+
+        @include laptop {
+            margin-top: 52px;
+        }
+
     }
 
     &__submit-btn {
+
         margin-top: 94px;
+
+        @include laptop {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+    }
+
+    &__mobile-image {
+        width: 320px;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        display: block;
+        margin-right: -15px;
     }
 
 }
