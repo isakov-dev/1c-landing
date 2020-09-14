@@ -7,7 +7,7 @@
     padding-bottom: 120px;
 
     @include laptop {
-        padding-top: 90px;
+        padding-top: 0;
         background: none;
         padding-bottom: 40px;
     }
@@ -57,12 +57,11 @@
     }
 
     &__mobile-image {
-        width: 320px;
         max-width: 100%;
         height: auto;
         margin-left: auto;
+        margin-right: auto;
         display: block;
-        margin-right: -15px;
     }
 
 }

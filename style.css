@@ -1304,12 +1304,11 @@ a:hover {
 }
 
 .hero__mobile-image {
-  width: 320px;
   max-width: 100%;
   height: auto;
   margin-left: auto;
+  margin-right: auto;
   display: block;
-  margin-right: -15px;
 }
 
 .consultation {
@@ -1476,6 +1475,7 @@ a:hover {
   color: #fff;
   margin-left: -50px;
   padding: 20px 57px 30px 65px;
+  position: relative;
 }
 
 .card__bonus {
@@ -1484,8 +1484,16 @@ a:hover {
   line-height: 22px;
 }
 
-.card__bonus:not(:last-child) {
+.card__bonus:not(:last-of-type) {
   margin-bottom: 15px;
+}
+
+.card__bonus-angle {
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .card__total {
@@ -5410,7 +5418,7 @@ a:hover {
   }
 
   .hero {
-    padding-top: 90px;
+    padding-top: 0;
     background: none;
     padding-bottom: 40px;
   }

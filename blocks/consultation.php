@@ -57,6 +57,7 @@
                 title: "<?=$consultation->title?>",
                 name: "",
                 phone: "",
+                sending: false,
             },
             methods: {
                 submitForm() {

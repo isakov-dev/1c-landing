@@ -17,7 +17,7 @@
             <div class="col-12">
                 <div class="tabs nav row" role="tablist">
                     <?foreach ($products->tabs as $index => $tab) {?>
-                        <a class="tabs__item col-lg-3 col-md-5 col-sm-7 col-12 nav-link <?if (!$index) {?>active<?}?>"
+                        <a class="tabs__item col-lg-3 col-md-5 col-sm-7 col-9 nav-link <?if (!$index) {?>active<?}?>"
                            data-toggle="tab"
                            href="#products-tab-<?=$index?>" role="tab">
                             <img src="<?=$tab->image?>" alt="<?=$tab->name?>" class="tabs__image">
@@ -72,6 +72,8 @@
                                                                     <?=$item?>
                                                                 </li>
                                                             <?}?>
+                                                            <img src="img/products/bonus-angle.svg" alt=""
+                                                                 class="card__bonus-angle">
                                                         </ul>
                                                         <div class="card__total">
                                                             <div class="card__buttons">

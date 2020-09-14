@@ -31,6 +31,7 @@
         $('.trust__slider').flickity({
             cellAlign: 'left',
             pageDots: false,
+            contain: true,
         });
     });
 </script>

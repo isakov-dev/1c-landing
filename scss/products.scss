@@ -163,6 +163,7 @@
         color: $white;
         margin-left: -50px;
         padding: 20px 57px 30px 65px;
+        position: relative;
 
         @include tablet {
             margin-left: -15px;
@@ -178,8 +179,16 @@
         font-size: 16px;
         line-height: 22px;
 
-        &:not(:last-child) {
+        &:not(:last-of-type) {
             margin-bottom: 15px;
+        }
+
+        &-angle {
+            width: 35px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
 
     }

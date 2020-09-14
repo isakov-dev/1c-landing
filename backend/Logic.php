@@ -17,9 +17,9 @@ class Logic {
 
             $mail->CharSet = "utf-8";
             $mail->setFrom('mail@1c-landing.tmweb.ru', '1С');
-            $mail->addAddress('isakov.n@digitalaround.ru');
-            //$mail->addAddress('p.nazvanov@1structure.ru');
-            //$mail->addAddress('info@1structure.ru');
+            //$mail->addAddress('isakov.n@digitalaround.ru');
+            $mail->addAddress('p.nazvanov@1structure.ru');
+            $mail->addAddress('info@1structure.ru');
             $mail->isHTML(true);
             $mail->Subject = 'Заявка с 1C';
 
