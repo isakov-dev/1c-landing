@@ -2,13 +2,31 @@
 
   margin-top: 116px;
 
+  @include tablet {
+    margin-top: 64px;
+  }
+
   &__advantages {
+
     margin-top: 44px;
     margin-bottom: -44px;
+
+    @include tablet {
+      margin-top: 30px;
+      margin-bottom: -20px;
+    }
+
   }
 
   &__items {
+
     margin-top: 54px;
+
+    @include tablet {
+      margin-top: 40px;
+      margin-bottom: -36px;
+    }
+
   }
 
 }
@@ -18,6 +36,10 @@
   display: flex;
   align-items: start;
   margin-bottom: 44px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
 
   &__icon {
     width: 80px;
@@ -42,7 +64,14 @@
   background: url("img/achievements/item-bg.svg") top left no-repeat;
   background-size: contain;
 
+  @include laptop {
+    margin-bottom: 36px;
+    width: 225px;
+    height: 204px;
+  }
+
   &__number {
+
     margin-top: 40px;
     font-size: 120px;
     line-height: 146px;
@@ -50,14 +79,30 @@
     background: $orange-gradient-2;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      font-size: 90px;
+      line-height: 110px;
+      margin-top: 48px;
+    }
+
   }
 
   &__caption {
+
     font-weight: bold;
     font-size: 22px;
     line-height: 32px;
     padding-left: 125px;
     margin-top: -25px;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 28px;
+      padding-left: 86px;
+      margin-top: -15px;
+    }
+
   }
 
 }

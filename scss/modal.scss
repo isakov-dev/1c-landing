@@ -6,23 +6,47 @@
   padding: 50px 250px 50px 70px;
   position: relative;
   overflow: visible;
+  max-width: 100%;
+
+  @include tablet {
+    padding: 60px 15px 50px;
+  }
 
   &_small {
+
     width: 510px;
     padding-right: 70px;
+
+    @include tablet {
+      padding-right: 15px;
+    }
+
   }
 
   &__close {
+
     position: absolute;
     z-index: 2;
     top: -18px;
     right: -20px;
+
+    @include laptop {
+      top: 20px;
+      right: 18px;
+    }
+
   }
 
   &__fields {
+
     margin-top: 20px;
     width: 350px;
     max-width: 100%;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+
   }
 
   &__field {
@@ -43,9 +67,15 @@
   }
 
   &__image {
+
     position: absolute;
     top: 55px;
     left: 480px;
+
+    @include laptop {
+      display: none;
+    }
+
   }
 
   &__text {

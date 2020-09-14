@@ -4,7 +4,13 @@
   position: relative;
   padding-bottom: 44px;
 
+  @include tablet {
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
+
   &::after {
+
     position: absolute;
     content: "";
     height: 100%;
@@ -13,6 +19,11 @@
     width: 50%;
     background: url("img/support/bg.png") top right no-repeat;
     background-size: contain;
+
+    @include laptop {
+      background: none;
+    }
+
   }
 
   &__list {

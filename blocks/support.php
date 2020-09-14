@@ -7,7 +7,7 @@
 <div class="support">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-xl-7 col-lg-6">
                 <div class="title">
                     <?=$support->title?>
                 </div>

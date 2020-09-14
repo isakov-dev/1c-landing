@@ -26,9 +26,9 @@
             </div>
         <?}?>
         <?if (!empty($achievements->achievements)) {?>
-            <div class="achievements__items row">
+            <div class="achievements__items row justify-content-center">
                 <?foreach ($achievements->achievements as $achievement) {?>
-                    <div class="achievement col-lg-4">
+                    <div class="achievement col-lg-4 col-md-6">
                         <div class="achievement__number">
                             <?=$achievement->number?>
                         </div>

@@ -49,6 +49,7 @@ a, a:hover {
   @include tablet {
     font-size: 18px;
     line-height: 22px;
+    margin-top: 20px;
   }
 
 }
@@ -151,70 +152,78 @@ a, a:hover {
 
 }
 
-.flickity-prev-next-button {
+.flickity-enabled {
 
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: $red;
-  color: $white;
-
-  &.previous {
-    left: calc(-50px - 12px);
+  @include tablet {
+    padding-top: 80px;
   }
 
-  &.next {
-    right: calc(-50px - 12px);
-  }
-  
-  @media (max-width: 1299.98px) {
+  .flickity-prev-next-button {
 
-    &.previous {
-      left: 0;
-    }
-
-    &.next {
-      right: 0;
-    }
-
-  }
-
-  @media (max-width: 767.98px) {
-
-    top: unset;
-    bottom: -90px;
-
-    &.previous {
-      left: calc(50% - 65px);
-    }
-
-    &.next {
-      right: calc(50% - 65px);
-    }
-
-  }
-
-  .flickity-button-icon {
-    width: 15px;
-    height: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:hover {
-    background: $red-gradient
-  }
-
-  &:active {
-    background: $orange-gradient;
-    opacity: 1;
-  }
-
-  &:disabled {
-    opacity: .3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background: $red;
     color: $white;
+
+    &.previous {
+      left: calc(-50px - 12px);
+    }
+
+    &.next {
+      right: calc(-50px - 12px);
+    }
+
+    @media (max-width: 1299.98px) {
+
+      &.previous {
+        left: 0;
+      }
+
+      &.next {
+        right: 0;
+      }
+
+    }
+
+    @media (max-width: 767.98px) {
+
+      top: 0;
+      transform: none;
+
+      &.previous {
+        left: calc(50% - 60px);
+      }
+
+      &.next {
+        right: calc(50% - 60px);
+      }
+
+    }
+
+    .flickity-button-icon {
+      width: 15px;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background: $red-gradient
+    }
+
+    &:active {
+      background: $orange-gradient;
+      opacity: 1;
+    }
+
+    &:disabled {
+      opacity: .3;
+      background: $red;
+      color: $white;
+    }
+
   }
 
 }

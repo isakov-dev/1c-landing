@@ -8,10 +8,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="title">
+                <div class="trust__title title">
                     <?=$trust->title?>
                 </div>
-                <div class="subtitle">
+                <div class="trust__subtitle subtitle">
                     <?=$trust->subtitle?>
                 </div>
                 <div class="trust__slider">

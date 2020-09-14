@@ -1,6 +1,7 @@
 <div class="modal" id="modal-app" style="display: none">
     <a href="javascript:void(0)" class="modal__close" data-fancybox-close>
-        <img src="img/modal/close.svg" alt="">
+        <img src="img/modal/close.svg" alt="" class="d-none d-lg-block">
+        <img src="img/modal/close-mobile.svg" alt="" class="d-lg-none">
     </a>
     <div class="title">
         {{ title }}
@@ -29,7 +30,8 @@
 
 <div class="modal modal_small" id="success-modal" style="display: none">
     <a href="javascript:void(0)" class="modal__close" data-fancybox-close>
-        <img src="img/modal/close.svg" alt="">
+        <img src="img/modal/close.svg" alt="" class="d-none d-lg-block">
+        <img src="img/modal/close-mobile.svg" alt="" class="d-lg-none">
     </a>
     <div class="title">
         Ваша заявка принята!
@@ -42,7 +44,8 @@
 
 <div class="modal modal_small" id="error-modal" style="display: none">
     <a href="javascript:void(0)" class="modal__close" data-fancybox-close>
-        <img src="img/modal/close.svg" alt="">
+        <img src="img/modal/close.svg" alt="" class="d-none d-lg-block">
+        <img src="img/modal/close-mobile.svg" alt="" class="d-lg-none">
     </a>
     <div class="title">
         Ошибка!

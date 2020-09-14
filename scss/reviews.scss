@@ -5,6 +5,11 @@
   padding: 50px 0 70px;
   position: relative;
 
+  @include tablet {
+    padding: 30px 0 50px;
+    margin-top: 80px;
+  }
+
   &::before {
     content: url("img/reviews/circle-left.svg");
     position: absolute;
@@ -25,7 +30,13 @@
   }
 
   &__title {
+
     color: $white;
+
+    @include tablet {
+      text-align: center;
+    }
+
   }
 
   &__slider {
@@ -37,12 +48,24 @@
       padding-right: calc(50px + 12px);
     }
 
+    @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 20px;
+    }
+
   }
 
   &__item {
+
     width: 25%;
     padding-left: 15px;
     padding-right: 15px;
+
+    @include laptop {
+      width: 260px;
+    }
+
   }
 
   &__scan {
@@ -69,6 +92,8 @@
 
     &:disabled {
       opacity: .3;
+      background: $white;
+      color: $red;
     }
 
   }
