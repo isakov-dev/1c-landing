@@ -9,9 +9,12 @@
         <div class="modal__field field">
             <input class="field__input" type="text" placeholder="Ваше имя" v-model="name">
         </div>
-        <div class="modal__field field">
+        <div class="modal__field field" v-if="!emailInsteadPhone">
             <the-mask v-model="phone" mask="+7 (###) ###-##-##" :masked="true" class="field__input"
                       placeholder="Номер телефона"></the-mask>
+        </div>
+        <div class="modal__field field" v-else>
+            <input class="field__input" type="email" placeholder="Ваш e-mail" v-model="email">
         </div>
         <button class="modal__submit submit-btn submit-btn_wide" v-on:click="submitForm()" :disabled="!formIsValid">
             <span v-if="!sending">{{ submitText }}</span>
@@ -61,13 +64,19 @@
                 imageUrl: "",
                 name: "",
                 phone: "",
+                email: "",
                 sending: false,
+                emailInsteadPhone: false,
             },
             methods: {
-                openModal(title, submitText, imageUrl = false) {
+                openModal(title, submitText, imageUrl = false, emailInsteadPhone = false) {
                     this.title = title;
                     this.submitText = submitText;
                     this.imageUrl = imageUrl ? imageUrl : '';
+                    this.emailInsteadPhone = emailInsteadPhone;
+                    this.name = '';
+                    this.phone = '';
+                    this.email = '';
                     $.fancybox.open({
                         src: '#modal-app',
                         opts: {
@@ -84,8 +93,12 @@
                         let formData = {
                             title: this.title,
                             name: this.name,
-                            phone: this.phone,
                         };
+
+                        if (!this.emailInsteadPhone)
+                            formData['phone'] = this.phone;
+                        else
+                            formData['email'] = this.email;
 
                         formSender.send(formData)
                             .then(function() {
@@ -104,7 +117,12 @@
             },
             computed: {
                 formIsValid() {
-                    return (this.name.length > 1 && this.phone.length === 18);
+                    if (!this.emailInsteadPhone)
+                        return (this.name.length > 1 && this.phone.length === 18);
+                    else {
+                        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                        return (this.name.length > 1 && re.test(String(this.email).toLowerCase()));
+                    }
                 },
             }
         });

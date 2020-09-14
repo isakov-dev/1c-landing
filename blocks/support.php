@@ -21,7 +21,8 @@
                         </li>
                     <?}?>
                 </ul>
-                <button class="support__btn submit-btn">
+                <button class="support__btn submit-btn" onclick="modalApp.openModal('<?=$support->modal->title?>',
+                        '<?=$support->modal->submit_text?>', '<?=$support->modal->image_url?>')">
                     <?=$support->button_text?>
                 </button>
             </div>

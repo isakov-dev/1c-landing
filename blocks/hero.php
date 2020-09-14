@@ -21,7 +21,8 @@
                         </li>
                     <?}?>
                 </ul>
-                <button class="hero__submit-btn submit-btn">
+                <button class="hero__submit-btn submit-btn" onclick="modalApp.openModal('<?=$hero->modal->title?>',
+                        '<?=$hero->modal->submit_text?>', '<?=$hero->modal->image_url?>', true)">
                     <img src="img/hero/download.svg" alt="" class="submit-btn__icon">
                     <?=$hero->button_text?>
                 </button>

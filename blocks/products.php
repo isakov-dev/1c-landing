@@ -74,12 +74,17 @@
                                                         </ul>
                                                         <div class="card__total">
                                                             <div class="card__buttons">
-                                                                <button class="card__button submit-btn">
+                                                                <button class="card__button submit-btn"
+                                                                        onclick="modalApp.openModal(
+                                                                            'Заказать программу «<?=$product->name?>»',
+                                                                            'Заказать', 'img/products/modal.png')">
                                                                     Заказать
                                                                 </button>
                                                                 <?if ($product->prices->rent) {?>
-                                                                    <button class="card__button submit-btn
-                                                                        submit-btn_inverse">
+                                                                    <button class="card__button submit-btn submit-btn_inverse"
+                                                                            onclick="modalApp.openModal(
+                                                                                'Арендовать программу «<?=$product->name?>»',
+                                                                                'Арендовать', 'img/products/modal.png')">
                                                                         Арендовать
                                                                     </button>
                                                                 <?}?>

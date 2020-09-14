@@ -1279,11 +1279,10 @@ a:hover {
 }
 
 .hero {
-  min-height: 100vh;
   background: url("img/hero/bg.png") top center no-repeat;
   background-size: 100vw auto;
   padding-top: 156px;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 
 .hero__title {
