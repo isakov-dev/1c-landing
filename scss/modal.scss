@@ -3,9 +3,14 @@
   width: 730px;
   background: #FFF9F0;
   border-radius: 10px;
-  padding: 50px 250px 50px 65px;
+  padding: 50px 250px 50px 70px;
   position: relative;
   overflow: visible;
+
+  &_small {
+    width: 510px;
+    padding-right: 70px;
+  }
 
   &__close {
     position: absolute;
@@ -41,6 +46,14 @@
     position: absolute;
     top: 55px;
     left: 480px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 40px;
+    color: $black;
   }
 
 }
