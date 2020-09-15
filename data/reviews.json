@@ -1,10 +1,25 @@
 {
   "title": "Отзывы о нашей работе",
   "reviews": [
-    "img/reviews/scans/test.svg",
-    "img/reviews/scans/test.svg",
-    "img/reviews/scans/test.svg",
-    "img/reviews/scans/test.svg",
-    "img/reviews/scans/test.svg"
+    {
+      "preview": "img/reviews/scans/review1-pre.jpg",
+      "full": "img/reviews/scans/review1.jpg"
+    },
+    {
+      "preview": "img/reviews/scans/review2-pre.jpg",
+      "full": "img/reviews/scans/review2.jpg"
+    },
+    {
+      "preview": "img/reviews/scans/review3-pre.jpg",
+      "full": "img/reviews/scans/review3.jpg"
+    },
+    {
+      "preview": "img/reviews/scans/review4-pre.jpg",
+      "full": "img/reviews/scans/review4.jpg"
+    },
+    {
+      "preview": "img/reviews/scans/review5-pre.jpg",
+      "full": "img/reviews/scans/review5.jpg"
+    }
   ]
 }

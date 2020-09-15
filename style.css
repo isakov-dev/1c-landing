@@ -1282,7 +1282,8 @@ a:hover {
   background: url("img/hero/bg.png") top center no-repeat;
   background-size: 100vw auto;
   padding-top: 156px;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
+  min-height: 57.14286vw;
 }
 
 .hero__title {
@@ -1621,6 +1622,7 @@ a:hover {
 .reviews__scan {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .reviews .flickity-prev-next-button {
@@ -5418,6 +5420,8 @@ a:hover {
   }
 
   .hero {
+    min-height: unset;
+    height: auto;
     padding-top: 0;
     background: none;
     padding-bottom: 40px;

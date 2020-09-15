@@ -14,7 +14,9 @@
                 <div class="reviews__slider">
                     <?foreach ($reviews->reviews as $review) {?>
                         <div class="reviews__item">
-                            <img src="<?=$review?>" alt="" class="reviews__scan">
+                            <a data-fancybox="reviews" href="<?=$review->full?>">
+                                <img src="<?=$review->preview?>" alt="" class="reviews__scan">
+                            </a>
                         </div>
                     <?}?>
                 </div>
